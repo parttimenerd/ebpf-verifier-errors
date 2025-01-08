@@ -71,17 +71,6 @@ body:
       label: Source
       description: Source of the shown code
       value: own code
-
-  - type: dropdown
-    id: language
-    attributes:
-      label: Language of the code snippets
-      options:
-        - C
-        - Rust
-        - Java
-        - other
-      default: 0
       
   - type: input
     id: kernel_version
