@@ -1,4 +1,5 @@
 name: New Verifier Error
+title: "[Submission]: "
 description: Submit a new verifier error message and its resolution
 labels: [submission]
 
@@ -69,8 +70,7 @@ body:
     attributes:
       label: Source
       description: Source of the shown code
-      render: markdown
-      default: own code
+      value: own code
 
   - type: dropdown
     id: language
@@ -81,7 +81,7 @@ body:
         - Rust
         - Java
         - other
-      default: C
+      default: 1
       
   - type: dropdown
     id: kernel_version
