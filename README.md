@@ -11,11 +11,31 @@ The errors are collected in the form of
 [issues](https://github.com/parttimenerd/ebpf-verifier-errors/issues) to this
 repository.
 
+Please consider submitting your verifier errors today.
+
 ## How to submit?
 
 Just [create an issue with the "New Verifier Error" issue template](https://github.com/parttimenerd/ebpf-verifier-errors/issues/new?assignees=&labels=submisson&projects=&template=new-verifier-error.md):
 
 [![image](https://github.com/user-attachments/assets/0e1db0e8-d27f-4d36-9371-7a0805c7788b)](https://github.com/parttimenerd/ebpf-verifier-errors/issues/new?assignees=&labels=submisson&projects=&template=new-verifier-error.md)
+
+### How to get all issues?
+
+You can use the following bash script to obtain
+all currently available issues:
+
+```sh
+curl -s -H "https://api.github.com/repos/parttimenerd/ebpf-verifier-errors/issues?labels=submission" \
+     | jq -r '.[] | "\(.title)\n\(.body)\n-----"'
+```
+
+If you experience rate-limiting issues, try using a personal GitHub token:
+
+```sh
+curl -s -H "Authorization: token your_github_token_here" \
+         "https://api.github.com/repos/parttimenerd/ebpf-verifier-errors/issues?labels=submission" \
+     | jq -r '.[] | "\(.title)\n\(.body)\n-----"'
+```
 
 ## Contribute
 To contribute to the repository other than submitting
