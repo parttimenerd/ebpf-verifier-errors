@@ -83,14 +83,7 @@ body:
         - other
       default: 1
       
-  - type: dropdown
+  - type: input
     id: kernel_version
     attributes:
       label: Kernel Version
-      options:
-        - head
-        - "6.13"
-        - "6.12"
-        - unknown
-    validations:
-      required: true
