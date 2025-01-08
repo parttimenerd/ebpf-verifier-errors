@@ -81,7 +81,7 @@ body:
         - Rust
         - Java
         - other
-      default: 1
+      default: 0
       
   - type: input
     id: kernel_version
