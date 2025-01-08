@@ -1,0 +1,96 @@
+name: New Verifier Error
+description: Submit a new verifier error message and its resolution
+labels: [submission]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit a new verifier error to this collection.
+
+        First, tell us about the code:
+
+  - type: textarea
+    id: cause_description
+    attributes:
+      label: Cause Description
+      description: Describe the issue and its context.
+      render: markdown
+      placeholder: Provide a short explanation of the issue and its context.
+
+  - type: textarea
+    id: cause_code
+    attributes:
+      label: Cause Code
+      description: Code that caused the error. Mark relevant lines with comments.
+      render: c
+      placeholder: Include the problematic code and mark key lines with `// here`.
+    validations:
+      required: true
+        
+  - type: textarea
+    id: verifier_error
+    attributes:
+      label: Verifier Error Log
+      description: Relevant lines of the verifier error output
+      render: bash
+      placeholder: Paste the relevant verifier error output here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution_description
+    attributes:
+      label: Solution Description
+      description: Explain the solution to the issue.
+      render: markdown
+      placeholder: Provide an explanation of how the issue was resolved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution_code
+    attributes:
+      label: Solution Code
+      description: Fixed code that resolves the issue.
+      render: c
+      placeholder: Include the corrected code here.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Please make sure that you can share the source code
+        and give us some context on your submission:
+
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Source of the shown code
+      render: markdown
+      default: own code
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language of the code snippets
+      options:
+        - C
+        - Rust
+        - Java
+        - other
+      default: C
+      
+  - type: dropdown
+    id: kernel_version
+    attributes:
+      label: Kernel Version
+      options:
+        - head
+        - "6.13"
+        - "6.12"
+        - unknown
+    validations:
+      required: true
