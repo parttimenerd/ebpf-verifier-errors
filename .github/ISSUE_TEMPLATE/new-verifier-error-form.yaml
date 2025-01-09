@@ -77,9 +77,9 @@ body:
     attributes:
       label: Kernel Version
 
-  - type: markdown
+  - type: textarea
     id: misc
     attributes:
       label: Additional Remarks
       description: Anything else you want to share regarding this submission?
-      value: ""
+      render: markdown
