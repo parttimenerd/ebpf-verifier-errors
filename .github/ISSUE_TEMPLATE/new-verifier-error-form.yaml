@@ -76,3 +76,9 @@ body:
     id: kernel_version
     attributes:
       label: Kernel Version
+
+  - type: markdown
+    id: misc
+    attributes:
+      labels: Additional Remarks
+      description: Anything else you want to share regarding this submission?
