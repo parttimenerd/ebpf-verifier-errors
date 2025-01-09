@@ -80,5 +80,6 @@ body:
   - type: markdown
     id: misc
     attributes:
-      labels: Additional Remarks
+      label: Additional Remarks
       description: Anything else you want to share regarding this submission?
+      value: ""
