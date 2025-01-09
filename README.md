@@ -17,7 +17,7 @@ Please consider submitting your verifier errors today.
 
 Just [create an issue with the "New Verifier Error" issue template](https://github.com/parttimenerd/ebpf-verifier-errors/issues/new?assignees=&labels=submisson&projects=&template=new-verifier-error.md):
 
-[![image](https://github.com/user-attachments/assets/0e1db0e8-d27f-4d36-9371-7a0805c7788b)](https://github.com/parttimenerd/ebpf-verifier-errors/issues/new?assignees=&labels=submisson&projects=&template=new-verifier-error.md)
+[![image](https://github.com/user-attachments/assets/fd5c9585-640b-41ac-85f1-33bad87b9475)](https://github.com/parttimenerd/ebpf-verifier-errors/issues/new?assignees=&labels=submisson&projects=&template=new-verifier-error.md)
 
 ### How to get all issues?
 
