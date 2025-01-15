@@ -77,6 +77,11 @@ body:
     attributes:
       label: Kernel Version
 
+  - type: input
+    id: clang_version
+    attributes:
+      label: Clang Version  
+
   - type: textarea
     id: misc
     attributes:
