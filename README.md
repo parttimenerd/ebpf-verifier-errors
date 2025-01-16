@@ -25,7 +25,7 @@ You can use the following bash script to obtain
 all currently available issues:
 
 ```sh
-curl -s -H "https://api.github.com/repos/parttimenerd/ebpf-verifier-errors/issues?labels=submission" \
+curl -s "https://api.github.com/repos/parttimenerd/ebpf-verifier-errors/issues?labels=submission" \
      | jq -r '.[] | "\(.title)\n\(.body)\n-----"'
 ```
 
